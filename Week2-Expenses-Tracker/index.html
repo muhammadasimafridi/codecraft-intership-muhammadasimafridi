@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+    <p>Track your income, expenses, and balance easily</p>
+  </header>
+  <main>
+    <section class="summary-sec">
+      <div class="card balance-card">
+        <h3>Total Balance</h3>
+        <p id="balance">Rs. 0</p>
+      </div>
+      <div class="card income-card">
+        <h3>Total Income</h3>
+        <p id="income-total">Rs. 0</p>
+      </div>
+      <div class="card expense-card">
+        <h3>Total Expense</h3>
+        <p id="expense-total">Rs. 0</p>
+      </div>
+    </section>
+    <section class="input-sec">
+      <h2>Add New Transaction</h2>
+      <input type="text" id="item" placeholder="Enter description e.g. Salary, Food, Petrol" />
+      <input type="number" id="price" placeholder="Enter amount" />
+      <div class="btns">
+        <button class="inc-btn">Add Income</button>
+        <button class="exp-btn">Add Expense</button>
+      </div>
+      <p class="warning" id="warning"></p>
+    </section>
+    <section class="output-sec">
+      <div class="details">
+        <h2>Income History</h2>
+        <ul class="income list"></ul>
+      </div>
+      <div class="details">
+        <h2>Expense History</h2>
+        <ul class="expenses list"></ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Made by Muhammad Asim Afridi</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
